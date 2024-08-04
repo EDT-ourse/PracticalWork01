@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.14">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Button name="ОбновитьНДФЛ" id="1">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ОбновитьНДФЛ</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить виды доходов п/н</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ОбновитьНДФЛРасширеннаяПодсказка" id="2"/>
+		</Button>
+		<Button name="ОбновитьФСЗН" id="3">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ОбновитьФСЗН</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить тарифы ФСЗН</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ОбновитьФСЗНРасширеннаяПодсказка" id="4"/>
+		</Button>
+		<Button name="ОбновитьНачисления" id="5">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ОбновитьНачисления</CommandName>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Больничные листы: состав показателей</v8:content>
+				</v8:item>
+			</Title>
+			<ExtendedTooltip name="ОбновитьНачисленияРасширеннаяПодсказка" id="6"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ОбновлениеИБ</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОбновитьНДФЛ" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить НДФЛ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить НДФЛ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьНДФЛ</Action>
+		</Command>
+		<Command name="ОбновитьФСЗН" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить ФСЗН</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить ФСЗН</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьФСЗН</Action>
+		</Command>
+		<Command name="ОбновитьНачисления" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить начисления</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить начисления</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьНачисления</Action>
+		</Command>
+	</Commands>
+</Form>
